@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>express</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <%- include('blocks/header') -%>
+    <main>
+
+        <h1>Account of <%= username %></h1>
+        <div>
+            <h2>Others:</h2>
+            <% others.forEach(el => {%> 
+            <ul>
+                <li><a href="<%= username %>/chat/<%= el %>"><%= el %></a></li>
+                <% }) %>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>express</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <%- include('blocks/header') -%>
+    <main>
+        <div class="chat">
+            <div class="me">
+                <h2><%= username %></h2>
+                <form>
+                    <main>
+                        <div><p></p></div>
+                    </main>
+                    <input id="sent" type="text" name="message">
+                    <button type="button" id="send" value="Click">Send</button>
+                </form>
+            </div>
+
+            <div class="friend">
+                <h2><%= friend %></h2>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
